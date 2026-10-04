@@ -1,14 +1,21 @@
-# AI QA Roadmap
+# AI Quality Engineering Roadmap
 
-This portfolio deliberately keeps AI QA at the leadership/strategy layer in the first iteration.
+## AI QA Scope
 
-## Planned capabilities
+### LLM Output Evaluation
+Validate correctness, relevance, completeness, safety and structured output.
 
-1. AI-assisted test scenario generation from requirements.
-2. LLM output evaluation: relevance, groundedness, hallucination and safety.
-3. RAG retrieval testing and regression.
-4. AI-assisted defect clustering and prioritization.
-5. Prompt regression testing.
-6. Human approval before AI-generated tests enter the release suite.
+### Hallucination Testing
+Use known-answer and unsupported-question datasets. Flag answers that introduce facts not present in supplied context.
 
-**Leadership principle:** AI accelerates quality engineering; it does not remove engineering accountability.
+### Prompt Regression
+Maintain a versioned evaluation dataset and compare prompt/model versions against the same criteria.
+
+### RAG Evaluation
+Measure retrieval relevance, groundedness, answer correctness and context completeness.
+
+### Human-in-the-Loop
+AI-generated test scenarios and defect analysis remain subject to human review before release decisions.
+
+## Quality Gate Direction
+Functional PASS + Security PASS + Performance PASS + AI evaluation threshold PASS → Release recommendation.

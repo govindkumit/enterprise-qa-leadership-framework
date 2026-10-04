@@ -1,9 +1,12 @@
-# Requirements Traceability — Release v2.8.0
+# Requirements Traceability — v2.8.0
 
-| Requirement | Risk | Test coverage | Defect | Release |
+| Requirement | Risk | Test Area | Evidence | Status |
 |---|---|---|---|---|
-| REQ-001 Login | P0 | UI + API + security | None | PASS |
-| REQ-002 Checkout | P0 | UI + API + performance | DEF-1042 fixed | PASS |
-| REQ-003 Payment | P0 | API + E2E + reconciliation | None | PASS |
-| REQ-004 Notifications | P1 | API + UI | DEF-1051 open | Accepted |
-| REQ-005 Order history | P1 | API + UI + DB | None | PASS |
+| R-001 Login | High | UI/API | Smoke + API | PASS |
+| R-002 Product Search | Medium | UI/API | Regression | PASS |
+| R-003 Checkout | Critical | E2E/API | Critical path | PASS |
+| R-004 Payment | Critical | API/E2E | Payment suite | PASS |
+| R-005 Refund | High | API/E2E | Refund suite | PASS |
+| R-006 Notifications | Medium | Integration | Regression | PASS |
+
+Traceability links business requirements to risk, test coverage and release evidence.
