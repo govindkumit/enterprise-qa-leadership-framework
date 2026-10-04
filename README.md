@@ -116,6 +116,7 @@ Overall Quality Score	94/100	✅ PASS
 Release Recommendation
 🟢 GO
 One medium residual risk has been documented, communicated and accepted by the appropriate business owner.
+
 🧠 QA Leadership in Action
 This project demonstrates how a QA Manager handles real delivery situations rather than simply executing test cases.
 Example 1 — Release date moved forward
@@ -186,7 +187,6 @@ Production Incident	Lead validation and QA impact assessment
 Retrospective	Drive systemic quality improvement
 Leadership Review	Present quality metrics and risks
 
-
 ⚖️ Quality Decision Framework
 Every major QA decision follows:
 FACTS
@@ -230,6 +230,7 @@ Coverage Areas
 - Compatibility Testing
 - Accessibility
 - AI/LLM Quality Testing
+
 🤖 Automation & CI/CD
 Technology covered in this reference implementation:
 Python
@@ -270,6 +271,7 @@ Security testing considers:
 - OWASP risks
 - PII protection
 - Payment/PCI-related scenarios
+
 ⚡ Performance Engineering
 Performance strategy includes:
 - Baseline testing
@@ -281,6 +283,7 @@ Performance strategy includes:
 - Error rate
 - Resource utilization
 Performance results are used as release decision evidence, not merely as test reports.
+
 🤖 AI in Quality Engineering
 The framework also demonstrates the direction of modern AI-assisted QA:
 Requirement
@@ -307,6 +310,7 @@ AI QA areas include:
 - AI-generated test scenarios
 - AI-assisted defect analysis
 See: ai-qa-roadmap.md
+
 🚨 Production Quality Ownership
 Production quality does not stop at release.
 The framework demonstrates:
@@ -319,6 +323,7 @@ The framework demonstrates:
 - Regression improvement
 - Quality feedback into future releases
 See: production/incident-and-rca.md
+
 📁 Repository Structure
 enterprise-qa-leadership-framework/
 │
@@ -392,7 +397,8 @@ Modern QA
 ✅ LLM evaluation
 ✅ RAG testing
 ✅ Prompt regression
-✅ AI quality engineering  
+✅ AI quality engineering
+
 🏆 Leadership Philosophy
 A strong QA Manager does not measure success by the number of test cases executed.
 Success is predictable delivery, transparent risk, reliable evidence, stable releases and continuous improvement of product quality.
