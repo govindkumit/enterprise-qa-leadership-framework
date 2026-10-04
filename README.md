@@ -62,6 +62,7 @@ Customer
           │
           ▼
        Database
+```
 
 Release
 Version: v2.8.0
@@ -70,6 +71,7 @@ Deliver a predictable, risk-transparent release while protecting customer experi
 
 ## 👨‍💼 QA Manager Ownership Model
 
+```text
                          QA MANAGER
                              │
        ┌─────────────────────┼─────────────────────┐
@@ -100,23 +102,24 @@ Deliver a predictable, risk-transparent release while protecting customer experi
                     │
                     ▼
           CONTINUOUS IMPROVEMENT
+```
 
 ## 📊 Executive Quality Dashboard
+| KPI | Result | Gate |
+|---|---:|---|
+| Critical Defects | 0 | ✅ PASS |
+| High Defects | 1 | ✅ PASS with accepted risk |
+| Regression Pass Rate | 97% | ✅ PASS |
+| Smoke Pass Rate | 100% | ✅ PASS |
+| Automation Stability | 98% | ✅ PASS |
+| Security Critical Findings | 0 | ✅ PASS |
+| Performance SLA | PASS | ✅ PASS |
+| Overall Quality Score | 94/100 | ✅ PASS |
 
-KPI	Result	Gate
-Critical Defects	0	✅ PASS
-High Defects	1	✅ PASS with accepted risk
-Regression Pass Rate	97%	✅ PASS
-Smoke Pass Rate	100%	✅ PASS
-Automation Stability	98%	✅ PASS
-Security Critical Findings	0	✅ PASS
-Performance SLA	PASS	✅ PASS
-Overall Quality Score	94/100	✅ PASS
 
-**Note:** The metrics below are illustrative release data used to demonstrate QA governance and release decision-making.
+### Release Recommendation
 
-Release Recommendation
-🟢 GO
+🟢 **GO**
 One medium residual risk has been documented, communicated and accepted by the appropriate business owner.
 
 ## 🧠 QA Leadership in Action
@@ -175,23 +178,24 @@ Release
         ↓
 Corrective / Preventive Action
 
-## 🤝 QA Manager Operating Rhythm
 
+## 🤝 QA Manager Operating Rhythm
 The QA Manager participates in and influences:
-Forum	QA Manager Responsibility
-Requirement Refinement	Identify quality risks and testability gaps
-Sprint Planning	Estimate QA effort and define scope
-Daily Scrum	Surface quality blockers and risks
-Defect Triage	Drive severity, priority and ownership
-Architecture Discussion	Influence testability and quality attributes
-Release Planning	Define quality gates and readiness criteria
-Go/No-Go	Present evidence and quality recommendation
-Production Incident	Lead validation and QA impact assessment
-Retrospective	Drive systemic quality improvement
-Leadership Review	Present quality metrics and risks
+| Forum | QA Manager Responsibility |
+|---|---|
+| Requirement Refinement | Identify quality risks and testability gaps |
+| Sprint Planning | Estimate QA effort and define scope |
+| Daily Scrum | Surface quality blockers and risks |
+| Defect Triage | Drive severity, priority and ownership |
+| Architecture Discussion | Influence testability and quality attributes |
+| Release Planning | Define quality gates and readiness criteria |
+| Go/No-Go | Present evidence and quality recommendation |
+| Production Incident | Lead validation and QA impact assessment |
+| Retrospective | Drive systemic quality improvement |
+| Leadership Review | Present quality metrics and risks |
+
 
 ## ⚖️ Quality Decision Framework
-
 Every major QA decision follows:
 FACTS
   ↓
@@ -214,16 +218,18 @@ The goal is:
 "Here is the current quality evidence, here are the risks, here are the options, and here is my recommendation."
 
 ## 🧪 Test Strategy
-
 Testing is distributed across the quality engineering pyramid:
+
+```text
                  E2E / UI
               ─────────────
                 API Tests
             ────────────────
               Unit Tests
         ───────────────────────
+```
 
-Coverage Areas
+### Coverage Areas
 - Functional Testing
 - Regression Testing
 - Smoke Testing
@@ -237,17 +243,17 @@ Coverage Areas
 - AI/LLM Quality Testing
 
 ## 🤖 Automation & CI/CD
+Technology used in this reference implementation:
 
-Technology covered in this reference implementation:
-Python
-Pytest
-Playwright
-REST APIs
-SQL
-GitHub Actions
-Docker
-Performance Testing
-Security Testing
+- Python
+- Pytest
+- Playwright
+- REST APIs
+- SQL
+- GitHub Actions
+- Docker
+- Performance Testing
+- Security Testing
 
 Pipeline concept:
 Code Commit
@@ -266,8 +272,8 @@ Quality Gate
     ↓
 GO / BLOCK
 
-## 🔐 Security & Quality
 
+## 🔐 Security & Quality
 Security testing considers:
 - Authentication
 - Authorization
@@ -280,7 +286,6 @@ Security testing considers:
 - Payment/PCI-related scenarios
 
 ## ⚡ Performance Engineering
-
 Performance strategy includes:
 - Baseline testing
 - Load testing
@@ -293,7 +298,6 @@ Performance strategy includes:
 Performance results are used as release decision evidence, not merely as test reports.
 
 ## 🤖 AI in Quality Engineering
-
 The framework also demonstrates the direction of modern AI-assisted QA:
 Requirement
      ↓
@@ -310,6 +314,7 @@ Execution
 Quality evaluation
 
 AI QA areas include:
+
 - LLM output evaluation
 - Prompt regression testing
 - RAG evaluation
@@ -321,7 +326,6 @@ AI QA areas include:
 See: ai-qa-roadmap.md
 
 ## 🚨 Production Quality Ownership
-
 Production quality does not stop at release.
 The framework demonstrates:
 - Incident management
@@ -334,27 +338,9 @@ The framework demonstrates:
 - Quality feedback into future releases
 See: production/incident-and-rca.md
 
-## 📚 QA Leadership & Quality Engineering Playbook
-
-The detailed practices, governance models and supporting artifacts are organized below.
-
-| Area | Reference |
-|---|---|
-| 🎯 QA Strategy | [QA Strategy](strategy/qa-strategy.md) |
-| 👥 QA Leadership & Team Management | [Leadership Framework](leadership/) |
-| 🤝 QA Manager Operating Rhythm | [Operating Rhythm](meetings/qa-manager-operating-rhythm.md) |
-| ⚠️ Risk Management | [Risk Register](risk-management/risk-register.md) |
-| 🐞 Defect Management | [Defect Triage Model](defect-management/triage-model.md) |
-| 🚦 Release Governance | [Quality Gate](release-management/quality-gate.md) |
-| 🚨 Production Incident & RCA | [Incident & RCA](production/incident-and-rca.md) |
-| 📊 Quality Metrics | [Executive Quality Dashboard](metrics/executive-quality-dashboard.md) |
-| 🤖 AI Quality Engineering | [AI QA Roadmap](ai-qa-roadmap.md) |
-| 🔗 Requirements Traceability | [Requirements Traceability](requirements-traceability.md) |
-| 🧪 Automation | [Automation Framework](automation/) |
-
-
 ## 📁 Repository Structure
 
+```text
 enterprise-qa-leadership-framework/
 │
 ├── README.md
@@ -393,16 +379,16 @@ enterprise-qa-leadership-framework/
 │
 └── requirements-traceability.md
 
-## 🎯 What This Portfolio Demonstrates
 
-Leadership
+## 🎯 What This Portfolio Demonstrates
+### Leadership
 ✅ QA strategy
 ✅ Team leadership
 ✅ Resource planning
 ✅ Mentoring
 ✅ Stakeholder management
 ✅ Negotiation  
-Quality Engineering
+### Quality Engineering
 ✅ Test architecture
 ✅ Automation
 ✅ API testing
@@ -410,32 +396,31 @@ Quality Engineering
 ✅ Performance
 ✅ Security
 ✅ CI/CD  
-Governance
+### Governance
 ✅ Risk management
 ✅ Defect governance
 ✅ Quality metrics
 ✅ Traceability
 ✅ Quality gates
 ✅ Release management  
-Business Ownership
+### Business Ownership
 ✅ Go/No-Go decisions
 ✅ Production readiness
 ✅ Incident management
 ✅ RCA
 ✅ Continuous improvement  
-Modern QA
+### Modern QA
 ✅ AI-assisted QA
 ✅ LLM evaluation
 ✅ RAG testing
 ✅ Prompt regression
-✅ AI quality engineering
+✅ AI quality engineering  
 
 ## 🏆 Leadership Philosophy
-
 A strong QA Manager does not measure success by the number of test cases executed.
 Success is predictable delivery, transparent risk, reliable evidence, stable releases and continuous improvement of product quality.
 
-## 📌 Portfolio Disclaimer
 
+## 📌 Portfolio Disclaimer
 This is a fictional reference implementation created to demonstrate QA leadership, Quality Engineering and modern testing practices.
 It does not contain confidential information or proprietary material from any employer.
